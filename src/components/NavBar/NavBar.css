@@ -1,0 +1,125 @@
+.NavBar{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: salmon;
+    max-width: 150px;
+}
+
+.navBarMenu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #49557e;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.navBar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.NavBar button{
+    background-color: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s all ease  ;
+}
+
+.NavBar button:hover{
+    background-color: #fff4f2;
+}
+
+.NavBar-search-icon{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+@media(max-width:1050px){
+    .NavBar.logo{
+        font-size: 20px;
+      
+    }
+    .navBarMenu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navBar-right{
+        gap: 30px;
+    }
+    .navBar-right img{
+        width: 22px;
+    }
+
+    .navBar-right button{
+        padding: 8px 25px;
+    }
+    
+}
+
+@media(max-width:990px){
+    .NavBar.logo{
+        font-size: 10px;
+      
+    }
+    .navBarMenu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navBar-right{
+        gap: 20px;
+    }
+    .navBar-right img{
+        width: 20px;
+    }
+
+    .navBar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width:700px){
+  
+    .navBarMenu{
+        display: none;
+    }
+    .navBar-right{
+        gap: 10px;
+    }
+    .navBar-right img{
+        width: 15px;
+    }
+
+    .navBar-right button{
+        padding: 7px 15px;
+        font-size: 13px;
+    }
+    
+}
+
+
+
